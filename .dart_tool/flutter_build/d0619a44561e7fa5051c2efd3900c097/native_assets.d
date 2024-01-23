@@ -1,0 +1,1 @@
+ /home/fantomas/Desktop/Personnal\ Projects/Flutter\ Projects/Meals-App/.dart_tool/flutter_build/d0619a44561e7fa5051c2efd3900c097/native_assets.yaml: 

@@ -1,0 +1,4 @@
+#Tue Jan 23 13:58:49 CAT 2024
+base.0=/home/fantomas/Desktop/Personnal Projects/Flutter Projects/Meals-App/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
