@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 // import 'package:meals_app/data/dummy_data.dart';
-import 'package:meals_app/models/meal.dart';
+// import 'package:meals_app/models/meal.dart';
+import 'package:meals_app/providers/favorites_provider.dart';
 import 'package:meals_app/providers/meals_provider.dart';
 import 'package:meals_app/screens/categories.dart';
 import 'package:meals_app/screens/filters.dart';
@@ -24,32 +25,10 @@ class TabsSCreen extends ConsumerStatefulWidget {
 
 class _TabsSCreenState extends ConsumerState<TabsSCreen> {
   int _selectedPageIndex = 0;
-  final List<Meal> _favoritesMeals = [];
+  // final List<Meal> _favoritesMeals = [];
   Map<Filter, bool> _selectFilters = kInitialFilters;
 
-  void _showInfoMessage(String message) {
-    ScaffoldMessenger.of(context).clearSnackBars();
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-      content: Text(message),
-    ));
-  }
-
-  void _toggleMealFavoriteStatus(Meal meal) {
-    final isExising = _favoritesMeals.contains(meal);
-
-    if (isExising) {
-      setState(() {
-        _favoritesMeals.remove(meal);
-      });
-      _showInfoMessage('Meal is no longer a favorite');
-    } else {
-      setState(() {
-        _favoritesMeals.add(meal);
-        _showInfoMessage('Marked as a favorite!');
-      });
-    }
-  }
-
+ 
   void setSelectedPage(int index) {
     setState(() {
       _selectedPageIndex = index;
@@ -88,15 +67,14 @@ class _TabsSCreenState extends ConsumerState<TabsSCreen> {
   }).toList();
 
     Widget activePage = CategoriesScreen(
-      onToggleFavorite: _toggleMealFavoriteStatus,
       availableMeals: availableMeals,
     );
     var activePageTitle = 'Categories';
 
     if (_selectedPageIndex == 1) {
+      final favoriteMeals = ref.watch(favoriteMealsProvider);
       activePage = MealsScreen(
-        meals: _favoritesMeals,
-        onToggleFavorite: _toggleMealFavoriteStatus,
+        meals: favoriteMeals,
       );
       activePageTitle = 'Favorites';
     }
