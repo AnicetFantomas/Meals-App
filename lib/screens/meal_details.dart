@@ -32,7 +32,7 @@ class MealDetailsScreen extends ConsumerWidget {
                       : 'Meal was removed from favorites'),
                 ));
               },
-              icon:  Icon(isFavorite ? Icons.star : Icons.star_border),
+              icon: Icon(isFavorite ? Icons.star : Icons.star_border),
             )
           ],
         ),
