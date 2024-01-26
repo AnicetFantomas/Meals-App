@@ -38,6 +38,10 @@ flutter_lints
 2.19
 file:///home/fantomas/.pub-cache/hosted/pub.dev/flutter_lints-2.0.3/
 file:///home/fantomas/.pub-cache/hosted/pub.dev/flutter_lints-2.0.3/lib/
+flutter_riverpod
+2.17
+file:///home/fantomas/.pub-cache/hosted/pub.dev/flutter_riverpod-2.4.9/
+file:///home/fantomas/.pub-cache/hosted/pub.dev/flutter_riverpod-2.4.9/lib/
 google_fonts
 2.14
 file:///home/fantomas/.pub-cache/hosted/pub.dev/google_fonts-6.1.0/
@@ -102,6 +106,10 @@ plugin_platform_interface
 3.0
 file:///home/fantomas/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.8/
 file:///home/fantomas/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.8/lib/
+riverpod
+2.17
+file:///home/fantomas/.pub-cache/hosted/pub.dev/riverpod-2.4.9/
+file:///home/fantomas/.pub-cache/hosted/pub.dev/riverpod-2.4.9/lib/
 source_span
 2.18
 file:///home/fantomas/.pub-cache/hosted/pub.dev/source_span-1.10.0/
@@ -110,6 +118,10 @@ stack_trace
 2.18
 file:///home/fantomas/.pub-cache/hosted/pub.dev/stack_trace-1.11.1/
 file:///home/fantomas/.pub-cache/hosted/pub.dev/stack_trace-1.11.1/lib/
+state_notifier
+2.12
+file:///home/fantomas/.pub-cache/hosted/pub.dev/state_notifier-1.0.0/
+file:///home/fantomas/.pub-cache/hosted/pub.dev/state_notifier-1.0.0/lib/
 stream_channel
 2.19
 file:///home/fantomas/.pub-cache/hosted/pub.dev/stream_channel-2.1.2/
